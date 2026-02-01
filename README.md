@@ -19,6 +19,7 @@ The app includes separate pages for Home, About Us, and Membership, all rendered
 🧩 Template rendering with Jinja2
 
 🗂️ Project Structure
+
 AffuGym/
 │
 ├── app.py
