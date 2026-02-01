@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %} | AffuGym.</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+     <!-- navbar -->
+    <header class="main-header">
+      <div class="container header-inner">
+        <a href="/" class="logo">Affu<span>Gym</span></a>
+
+        <nav class="nav">
+          <a
+            href="/"
+            class="nav-link {% if request.path == '/' %}active{% endif %}"
+          >
+            Home
+          </a>
+
+          <a
+            href="/about"
+            class="nav-link {% if request.path == '/about' %}active{% endif %}"
+          >
+            About Us
+          </a>
+
+          <a
+            href="/membership"
+            class="nav-link btn-nav {% if request.path == '/membership' %}active{% endif %}"
+          >
+            Membership
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <div>{% block content %} {% endblock %}</div>
+
+    <section class="section section-alt">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Timings</h2>
+          <ul class="info-list">
+            <li><strong>Monday – Friday:</strong> 6:00 AM – 10:00 PM</li>
+            <li><strong>Saturday:</strong> 7:00 AM – 9:00 PM</li>
+            <li><strong>Sunday:</strong> 8:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="section-title">Location</h2>
+          <p>
+            Gulshan-e-Iqbal, Block 5<br />
+            Karachi, Pakistan
+          </p>
+
+          <p class="small">
+            Located in the heart of the city with easy parking and public
+            transport access.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&copy; 2025 AffuGym. All rights reserved.</p>
+        <!-- <p class="small">Designed for Gym Management System project.</p> -->
+      </div>
+    </footer>
+  </body>
+</html>

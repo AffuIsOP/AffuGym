@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}Membership{% endblock %}
+{% block content %}
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Membership Plans</h1>
+    <p>
+      Choose a plan that fits your lifestyle and training goals at AffuGym.
+      No hidden fees, just clear options and great value.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-3 membership-grid">
+      <div class="card pricing-card">
+        <h3>Basic</h3>
+        <p class="price">$25<span>/month</span></p>
+        <ul class="info-list">
+          <li>Access to gym floor</li>
+          <li>Cardio and strength machines</li>
+          <li>Locker room access</li>
+          <li>Standard support</li>
+        </ul>
+        <a href="#" class="btn full-width">Get Basic Plan</a>
+      </div>
+
+      <div class="card pricing-card featured">
+        <div class="badge">Popular</div>
+        <h3>Standard</h3>
+        <p class="price">$40<span>/month</span></p>
+        <ul class="info-list">
+          <li>All Basic features</li>
+          <li>Group classes included</li>
+          <li>1 free personal session / month</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn full-width primary">Choose Standard Plan</a>
+      </div>
+
+      <div class="card pricing-card">
+        <h3>Premium</h3>
+        <p class="price">$60<span>/month</span></p>
+        <ul class="info-list">
+          <li>All Standard features</li>
+          <li>Unlimited personal training*</li>
+          <li>Custom nutrition guidance</li>
+          <li>VIP lounge access</li>
+        </ul>
+        <a href="#" class="btn full-width">Go Premium</a>
+      </div>
+    </div>
+
+    <p class="small note">
+      *Unlimited personal training subject to booking availability and coach
+      schedule.
+    </p>
+  </div>
+</section>
+{% endblock %}
