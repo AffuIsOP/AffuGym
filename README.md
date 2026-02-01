@@ -4,7 +4,7 @@ This project is a basic Gym Management System website (AffuGym) built using Pyth
 
 The app includes separate pages for Home, About Us, and Membership, all rendered using Flask templates and styled with CSS.
 
-📌 Features
+# 📌 Features
 
 🏠 Home Page — Welcome message and gym highlights
 
@@ -18,23 +18,7 @@ The app includes separate pages for Home, About Us, and Membership, all rendered
 
 🧩 Template rendering with Jinja2
 
-🗂️ Project Structure
-
-AffuGym/
-├── app.py
-├── templates/
-│   ├── base.html
-│   ├── index.html
-│   ├── about.html
-│   └── membership.html
-├── static/
-│   └── css/
-│       └── style.css
-└── README.md
-
-
-
-🚀 How to Run Locally
+# 🚀 How to Run Locally
 Step 1 — Clone the Repository
 git clone https://github.com/AffuIsOP/AffuGym.git
 cd AffuGym
