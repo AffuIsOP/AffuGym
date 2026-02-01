@@ -1,4 +1,4 @@
-🏋️ AffuGym – Flask Web App
+##🏋️ AffuGym – Flask Web App
 
 This project is a basic Gym Management System website (AffuGym) built using Python Flask, HTML, and CSS. It demonstrates how to create a multi-page website with Flask routes, templates, and static files.
 
@@ -20,7 +20,6 @@ The app includes separate pages for Home, About Us, and Membership, all rendered
 
 ## 🗂️ Project Structure
 
-```text
 AffuGym/
 ├── app.py
 ├── templates/
