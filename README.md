@@ -21,7 +21,6 @@ The app includes separate pages for Home, About Us, and Membership, all rendered
 🗂️ Project Structure
 
 AffuGym/
-│
 ├── app.py
 ├── templates/
 │   ├── base.html
@@ -32,6 +31,7 @@ AffuGym/
 │   └── css/
 │       └── style.css
 └── README.md
+
 
 🚀 How to Run Locally
 Step 1 — Clone the Repository
